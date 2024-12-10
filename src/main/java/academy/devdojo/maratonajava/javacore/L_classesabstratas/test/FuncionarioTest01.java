@@ -9,6 +9,7 @@ public class FuncionarioTest01 {
         Desenvolvedor denvolvedor = new Desenvolvedor("Vinicius", 6000);
         System.out.println(gerente);
         System.out.println(denvolvedor);
-
+        gerente.imprime();
+        denvolvedor.imprime();
     }
 }
