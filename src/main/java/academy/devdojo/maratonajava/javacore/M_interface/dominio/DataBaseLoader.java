@@ -2,6 +2,8 @@ package academy.devdojo.maratonajava.javacore.M_interface.dominio;
 
 public class DataBaseLoader implements DataLoader, DataRemover {
 
+    // private -> default -> protected -> public
+
     @Override
     public void load() {
         System.out.println("Carregando dados do banco de dados ");
@@ -15,5 +17,9 @@ public class DataBaseLoader implements DataLoader, DataRemover {
     @Override
     public void checkPermission() {
         System.out.println("Checando de permissões do banco de dados");
+    }
+
+    public static void retriveMaxDataSize(){
+        System.out.println("Dentro do retriveMaxDataSize na classe DataBaseLoader");
     }
 }
